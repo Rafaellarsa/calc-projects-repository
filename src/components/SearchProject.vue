@@ -34,8 +34,11 @@
               <v-combobox
                 label="Department"
                 :items="[
+                  'Economics',
+                  'Engineering',
+                  'Mathematics',
+                  'Physics',
                   'Physics & Astronomy',
-                  'Electrical & Computing Engineering',
                 ]"
                 hide-details
               /> </v-col
@@ -43,9 +46,11 @@
               <v-combobox
                 label="Major"
                 :items="[
+                  'Economics',
+                  'Engineering',
+                  'Mathematics',
+                  'Physics',
                   'Physics and Astronomy',
-                  'Electrical Engineering',
-                  'Computing Engineering',
                 ]"
                 hide-details
               /> </v-col></v-row
@@ -54,12 +59,46 @@
             ><v-col>
               <v-autocomplete
                 label="Keywords"
-                :items="[
-                  'Taylor Series',
-                  'Planck Law',
-                  'Stars',
-                  'Blackbody Radiation',
-                ]"
+                :items="
+                  [
+                    'Rayleigh-Jeans Law',
+                    'Taylor Series',
+                    'Applications of Taylor Series',
+                    'Planck Law',
+                    'Astronomy',
+                    'Stars',
+                    'Blackbody Radiation',
+                    'Baseball',
+                    'Force',
+                    'Momentum',
+                    'Impulse',
+                    'Work',
+                    'Kinetic Energy',
+                    'Position',
+                    'Velocity',
+                    'Acceleration',
+                    'Differential Equations',
+                    'Integrals',
+                    'Integration Techniques',
+                    'u-Substitution',
+                    'Integration by Parts',
+                    'Partial Fraction Decomposition',
+                    'Integral Calculators',
+                    'Computer Algebra System',
+                    'Trig Identities',
+                    'Mathematical Induction',
+                    'Sum Notation',
+                    'Gini Index',
+                    'Economics',
+                    'Area',
+                    'Graph Modeling',
+                    'Quadratic Model',
+                    'Power Model',
+                    'Volumes',
+                    'Discs/Washers',
+                    'Riemann Sums',
+                  ].sort()
+                "
                 hide-details
                 chips
                 closable-chips
