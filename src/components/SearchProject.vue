@@ -11,6 +11,7 @@
                 hide-details
                 :append-inner-icon="expanded ? '' : 'mdi-magnify'"
                 @click:append-inner=""
+                v-model="title"
               />
             </v-col>
             <v-col cols="auto">
@@ -40,7 +41,9 @@
                   'Physics',
                   'Physics & Astronomy',
                 ]"
+                v-model="department"
                 hide-details
+                multiple
               /> </v-col
             ><v-col>
               <v-combobox
@@ -52,10 +55,17 @@
                   'Physics',
                   'Physics and Astronomy',
                 ]"
+                v-model="major"
                 hide-details
+                multiple
               /> </v-col></v-row
           ><v-row>
-            <v-col> <v-text-field label="Topic" hide-details /> </v-col
+            <v-col>
+              <v-text-field
+                label="Topic"
+                v-model="topic"
+                hide-details
+              /> </v-col
             ><v-col>
               <v-autocomplete
                 label="Keywords"
@@ -99,6 +109,7 @@
                     'Riemann Sums',
                   ].sort()
                 "
+                v-model="keywords"
                 hide-details
                 chips
                 closable-chips
@@ -108,20 +119,18 @@
             <v-col>
               <v-row><v-label class="pl-3">Difficulty</v-label></v-row>
               <v-row>
-                <v-checkbox label="Easy" value="Easy" />
-                <v-checkbox label="Medium" value="Medium" />
-                <v-checkbox label="Difficult" value="Difficult" />
+                <v-checkbox label="Easy" value="easy" v-model="difficulty" />
+                <v-checkbox
+                  label="Medium"
+                  value="medium"
+                  v-model="difficulty"
+                />
+                <v-checkbox
+                  label="Difficult"
+                  value="difficult"
+                  v-model="difficulty"
+                />
               </v-row>
-            </v-col>
-            <v-col>
-              <v-range-slider
-                label="Number of Students"
-                step="1"
-                min="1"
-                max="10"
-                show-ticks
-                thumb-label
-              />
             </v-col>
           </v-row>
         </v-card-text>
@@ -129,7 +138,7 @@
 
       <v-card-actions class="pa-8 pt-0" v-if="expanded">
         <v-spacer />
-        <v-btn> Clear </v-btn>
+        <v-btn @click="onClear"> Clear </v-btn>
         <v-btn append-icon="mdi-magnify" variant="outlined"> Search </v-btn>
       </v-card-actions>
     </v-form>
@@ -140,6 +149,22 @@
 export default {
   data: () => ({
     expanded: false,
+    title: "",
+    department: [],
+    major: [],
+    topic: "",
+    keywords: [],
+    difficulty: ["easy", "medium", "difficult"],
   }),
+  methods: {
+    onClear() {
+      this.title = "";
+      this.department = [];
+      this.major = [];
+      this.topic = "";
+      this.keywords = [];
+      this.difficulty = ["easy", "medium", "difficult"];
+    },
+  },
 };
 </script>
