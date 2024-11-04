@@ -36,9 +36,27 @@
       />
       <v-spacer></v-spacer>
 
-      <v-btn icon="mdi-eye-outline" size="small" />
-      <v-btn icon="mdi-file-edit-outline" size="small" />
-      <v-btn icon="mdi-download-box" size="medium" />
+      <v-tooltip text="Edit Project">
+        <template v-slot:activator="{ props }">
+          <v-btn
+            icon="mdi-pencil-outline"
+            size="small"
+            v-bind="props"
+            disabled
+          />
+        </template>
+      </v-tooltip>
+      <v-tooltip text="Download PDF">
+        <template v-slot:activator="{ props }">
+          <v-btn
+            icon="mdi-download-box"
+            size="medium"
+            :href="`./projectPdfs/${project.id}.pdf`"
+            download
+            v-bind="props"
+          />
+        </template>
+      </v-tooltip>
     </v-card-actions>
   </v-card>
 </template>
