@@ -13,14 +13,11 @@
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
-import projects from "../mockedData/projects.json";
 
 export default {
   components: {
     ProjectCard,
   },
-  data: () => ({
-    projects: projects,
-  }),
+  props: ["projects"],
 };
 </script>

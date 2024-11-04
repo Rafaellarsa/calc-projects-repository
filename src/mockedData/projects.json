@@ -1,8 +1,8 @@
 [
   {
     "title": "Radiation from the Stars",
-    "department": "Physics & Astronomy",
-    "major": "Physics and Astronomy",
+    "department": ["Physics & Astronomy"],
+    "major": ["Physics and Astronomy"],
     "topic": "Taylor Series",
     "keywords": [
       "Rayleigh-Jeans Law",
@@ -19,8 +19,8 @@
   },
   {
     "title": "Calculus and Baseball",
-    "department": "Physics",
-    "major": "Physics",
+    "department": ["Physics"],
+    "major": ["Physics"],
     "topic": "Applications to Physics/Engineering, Differential Equations",
     "keywords": [
       "Baseball",
@@ -40,8 +40,8 @@
   },
   {
     "title": "Patterns in Integrals",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "u-Substitution, Integration by Parts, Partial Fraction Decomposition",
     "keywords": [
       "Integrals",
@@ -61,8 +61,8 @@
   },
   {
     "title": "The Gini Index",
-    "department": "Economics",
-    "major": "Economics",
+    "department": ["Economics"],
+    "major": ["Economics"],
     "topic": "Area Between Curves",
     "keywords": [
       "Gini Index",
@@ -78,8 +78,8 @@
   },
   {
     "title": "Rotating on a Slant",
-    "department": "Engineering",
-    "major": "Engineering",
+    "department": ["Engineering"],
+    "major": ["Engineering"],
     "topic": "Area Between Curves, Volumes",
     "keywords": [
       "Volumes",
@@ -94,8 +94,8 @@
   },
   {
     "title": "How Fast Does a Tank Drain?",
-    "department": "Physics",
-    "major": "Physics",
+    "department": ["Physics"],
+    "major": ["Physics"],
     "topic": "Differential Equations",
     "keywords": [
       "Modeling",
@@ -110,8 +110,8 @@
   },
   {
     "title": "Which is Faster, Going Up or Coming Down?",
-    "department": "Physics",
-    "major": "Physics",
+    "department": ["Physics"],
+    "major": ["Physics"],
     "topic": "Differential Equations",
     "keywords": [
       "Differential Equations",
@@ -125,8 +125,8 @@
   },
   {
     "title": "Logistic Sequences",
-    "department": "Biology",
-    "major": "Biology",
+    "department": ["Biology"],
+    "major": ["Biology"],
     "topic": "Sequences",
     "keywords": [
       "Sequences",
@@ -144,8 +144,8 @@
   },
   {
     "title": "An Elusive Limit",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Taylor Series",
     "keywords": [
       "L'Hospital's Rule",
@@ -160,8 +160,8 @@
   },
   {
     "title": "How Newton Discovered the Binomial Series",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Taylor Series",
     "keywords": ["Binomial Series", "Binomial Theorem", "Writing"],
     "difficulty": 2,
@@ -170,8 +170,8 @@
   },
   {
     "title": "Running Circles Around Circles",
-    "department": "Physics",
-    "major": "Physics",
+    "department": ["Physics"],
+    "major": ["Physics"],
     "topic": "Parametric Equations",
     "keywords": ["Cycloids", "Hypocycloids", "Epicycloids", "Circles"],
     "difficulty": 0,
@@ -180,8 +180,8 @@
   },
   {
     "title": "Bézier Curves",
-    "department": "Computer Science",
-    "major": "Computer Science",
+    "department": ["Computer Science"],
+    "major": ["Computer Science"],
     "topic": "Calculus with Parametric Equations",
     "keywords": [
       "Linear Interpolation",
@@ -197,8 +197,8 @@
   },
   {
     "title": "Families of Polar Curves",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Polar Coordinates",
     "keywords": ["Polar Curves", "Polar Coordinates", "Ovals of Cassini"],
     "difficulty": 0,
@@ -207,8 +207,8 @@
   },
   {
     "title": "Power Reduction Formulas",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Integration by Parts, Trigonometric Integrals",
     "keywords": [
       "Integrals",
@@ -223,8 +223,8 @@
 
   {
     "title": "Integrate Any Rational Function!",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Partial Fraction Decomposition",
     "keywords": [
       "Integrals",
@@ -239,8 +239,8 @@
   },
   {
     "title": "Gabriel's Horn",
-    "department": "Mathematics",
-    "major": "Mathematics",
+    "department": ["Mathematics"],
+    "major": ["Mathematics"],
     "topic": "Volumes, Surface Area",
     "keywords": [
       "Integrals",

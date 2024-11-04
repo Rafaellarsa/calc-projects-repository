@@ -12,11 +12,13 @@
         <v-row no-gutters>
           <v-col><b>Topic:</b> {{ project.topic }}</v-col></v-row
         ><v-row no-gutters
-          ><v-col><b>Department:</b> {{ project.department }} </v-col
-          ><v-col><b>Major:</b> {{ project.major }}</v-col></v-row
+          ><v-col><b>Department:</b> {{ project.department.join(", ") }} </v-col
+          ><v-col><b>Major:</b> {{ project.major.join(", ") }}</v-col></v-row
         >
         <v-row no-gutters>
-          <v-col><b>Difficulty:</b> {{ project.difficulty }}</v-col>
+          <v-col
+            ><b>Difficulty:</b> {{ difficultyNames[project.difficulty] }}</v-col
+          >
           <v-col><b>Hours:</b> {{ project.hours }} hours</v-col></v-row
         ><v-row no-gutters>
           <v-col
@@ -46,6 +48,7 @@ export default {
   props: ["project"],
   data: () => ({
     expand: false,
+    difficultyNames: ["Easy", "Medium", "Difficult"],
   }),
 };
 </script>
