@@ -4,118 +4,29 @@
     <v-form>
       <v-container fluid>
         <v-card-text class="pa-8 pb-5">
-          <v-row
-            ><v-col>
-              <v-text-field
-                label="Project Title"
-                hide-details
-                :append-inner-icon="expanded ? '' : 'mdi-magnify'"
-                @click:append-inner="onShortSearch"
-                v-model="title"
-              />
+          <v-row><v-col>
+              <v-text-field label="Project Title" hide-details :append-inner-icon="expanded ? '' : 'mdi-magnify'"
+                @click:append-inner="onShortSearch" v-model="title" />
             </v-col>
             <v-col cols="auto">
-              <v-btn
-                flat
-                :append-icon="
-                  expanded
-                    ? 'mdi-unfold-less-horizontal'
-                    : 'mdi-unfold-more-horizontal'
-                "
-                class="mt-3"
-                @click="expanded = !expanded"
-                >{{ expanded ? "Reduce" : "Expand" }}</v-btn
-              ></v-col
-            ></v-row
-          >
+              <v-btn flat :append-icon="expanded
+                ? 'mdi-unfold-less-horizontal'
+                : 'mdi-unfold-more-horizontal'
+                " class="mt-3" @click="expanded = !expanded">{{ expanded ? "Reduce" : "Expand"
+                }}</v-btn></v-col></v-row>
         </v-card-text>
         <v-card-text class="pa-8 pt-0" v-if="expanded">
-          <v-row
-            ><v-col>
-              <v-combobox
-                label="Department"
-                :items="[
-                  'Economics',
-                  'Engineering',
-                  'Mathematics',
-                  'Physics',
-                  'Physics & Astronomy',
-                ]"
-                v-model="department"
-                hide-details
-                multiple
-              /> </v-col
-            ><v-col>
-              <v-combobox
-                label="Major"
-                :items="[
-                  'Economics',
-                  'Engineering',
-                  'Mathematics',
-                  'Physics',
-                  'Physics and Astronomy',
-                ]"
-                v-model="major"
-                hide-details
-                multiple
-              /> </v-col></v-row
-          ><v-row>
+          <v-row><v-col>
+              <v-combobox label="Department" :items="allDepartments.sort()" v-model="department" hide-details
+                multiple /> </v-col><v-col>
+              <v-combobox label="Major" :items="allMajors.sort()" v-model="major" hide-details multiple />
+            </v-col></v-row><v-row>
             <v-col>
-              <v-text-field
-                label="Topic"
-                v-model="topic"
-                hide-details
-              /> </v-col
-            ><v-col>
-              <v-autocomplete
-                label="Keywords"
-                :items="
-                  [
-                    'Rayleigh-Jeans Law',
-                    'Taylor Series',
-                    'Applications of Taylor Series',
-                    'Planck Law',
-                    'Astronomy',
-                    'Stars',
-                    'Blackbody Radiation',
-                    'Baseball',
-                    'Force',
-                    'Momentum',
-                    'Impulse',
-                    'Work',
-                    'Kinetic Energy',
-                    'Position',
-                    'Velocity',
-                    'Acceleration',
-                    'Differential Equations',
-                    'Integrals',
-                    'Integration Techniques',
-                    'u-Substitution',
-                    'Integration by Parts',
-                    'Partial Fraction Decomposition',
-                    'Integral Calculators',
-                    'Computer Algebra System',
-                    'Trig Identities',
-                    'Mathematical Induction',
-                    'Sum Notation',
-                    'Gini Index',
-                    'Economics',
-                    'Area',
-                    'Graph Modeling',
-                    'Quadratic Model',
-                    'Power Model',
-                    'Volumes',
-                    'Discs/Washers',
-                    'Riemann Sums',
-                  ].sort()
-                "
-                v-model="keywords"
-                hide-details
-                chips
-                closable-chips
-                multiple
-              /> </v-col></v-row
-          ><v-row>
+              <v-text-field label="Topic" v-model="topic" hide-details /> </v-col><v-col>
+              <v-autocomplete label="Keywords" :items="allKeywords.sort()" v-model="keywords" hide-details chips
+                closable-chips multiple />
+            </v-col></v-row>
+          <v-row>
             <v-col>
               <v-row><v-label class="pl-3">Difficulty</v-label></v-row>
               <v-row>
@@ -140,6 +51,10 @@
 </template>
 
 <script>
+import allKeywords from "../mockedData/keywords.json";
+import allDepartments from "../mockedData/departments.json";
+import allMajors from "../mockedData/majors.json";
+
 export default {
   props: ["allProjects"],
   data: () => ({
@@ -150,6 +65,9 @@ export default {
     topic: "",
     keywords: [],
     difficulty: [0, 1, 2],
+    allKeywords,
+    allDepartments,
+    allMajors
   }),
   methods: {
     onClear() {
