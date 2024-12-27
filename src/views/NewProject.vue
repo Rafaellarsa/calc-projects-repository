@@ -18,7 +18,8 @@
                                 <v-text-field label="Topic" v-model="topic" hide-details /> </v-col><v-col>
                                 <v-autocomplete label="Keywords" :items="allKeywords.sort()" v-model="keywords"
                                     hide-details chips closable-chips multiple />
-                            </v-col></v-row><v-row>
+                            </v-col></v-row>
+                        <v-row>
                             <v-col>
                                 <v-row><v-label class="pl-3">Difficulty</v-label></v-row>
                                 <v-row>
@@ -26,6 +27,9 @@
                                     <v-checkbox label="Medium" :value="1" v-model="difficulty" />
                                     <v-checkbox label="Difficult" :value="2" v-model="difficulty" />
                                 </v-row>
+                            </v-col>
+                            <v-col>
+                                <v-file-input accept=".pdf" label="Project PDF" />
                             </v-col>
                         </v-row>
                     </v-card-text>
