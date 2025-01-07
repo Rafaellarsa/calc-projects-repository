@@ -10,7 +10,7 @@
                     </v-card-text>
                     <v-card-text class="pa-8 pt-0">
                         <v-row><v-col>
-                                <v-combobox label="Department" :items="allDepartments.sort()" v-model="department"
+                               <v-combobox label="Department" :items="allDepartments.sort()" v-model="department"
                                     hide-details multiple /> </v-col><v-col>
                                 <v-combobox label="Major" :items="allMajors.sort()" v-model="major" hide-details
                                     multiple /> </v-col></v-row><v-row>
