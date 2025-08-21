@@ -20,6 +20,7 @@
         variant="underlined"
             :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
             :type="showPassword ? 'text' : 'password'"
+            name="input-10-1"
             @click:append="showPassword = !showPassword"
           ></v-text-field>
     </v-container>
@@ -29,7 +30,7 @@
 <v-card-actions>
   <v-spacer></v-spacer>
 
-  <v-btn color="success" @click="onLogin">
+  <v-btn color="success" :to="{ name: 'home' }">
     Login
     <v-icon icon="mdi-chevron-right" end></v-icon>
   </v-btn>
@@ -40,34 +41,15 @@
 </template>
 
 <script>
-import { signIn } from "aws-amplify/auth"
-
   export default {
     data () {
       return {
         showPassword: false,
-        email: '',
         password: '',
-        // rules: {
-        //   emailMatch: () => (`The email and password you entered don't match`),
-        // },
+        rules: {
+          emailMatch: () => (`The email and password you entered don't match`),
+        },
       }
     },
-    methods: {
-      async onLogin() {
-        signIn({
-          username: this.email,
-          password: this.password,
-        }).then((onfulfilled) => {
-          console.log(onfulfilled);
-          router.push({ name: 'home'})
-          
-        }).catch((onrejected) => {
-          console.error(onrejected?.message);
-        })
-
-// :to="{ name: 'home' }"
-      }
-    }
   }
 </script>
