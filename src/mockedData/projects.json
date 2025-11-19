@@ -2,13 +2,16 @@
   {
     "id": 0,
     "title": "Radiation from the Stars",
-    "department": [
+    "departments": [
       "Physics & Astronomy"
     ],
-    "major": [
+    "majors": [
       "Physics and Astronomy"
     ],
-    "topic": "Taylor Series",
+    "topics": [
+      "Taylor Series",
+      "Applications of Taylor Series"
+    ],
     "keywords": [
       "Rayleigh-Jeans Law",
       "Taylor Series",
@@ -25,13 +28,16 @@
   {
     "id": 1,
     "title": "Calculus and Baseball",
-    "department": [
+    "departments": [
       "Physics"
     ],
-    "major": [
+    "majors": [
       "Physics"
     ],
-    "topic": "Applications to Physics/Engineering, Differential Equations",
+    "topics": [
+      "Applications to Physics/Engineering",
+      "Differential Equations"
+    ],
     "keywords": [
       "Baseball",
       "Force",
@@ -51,13 +57,17 @@
   {
     "id": 2,
     "title": "Patterns in Integrals",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "u-Substitution, Integration by Parts, Partial Fraction Decomposition",
+    "topics": [
+      "u-Substitution",
+      "Integration by Parts",
+      "Partial Fraction Decomposition"
+    ],
     "keywords": [
       "Integrals",
       "Integration Techniques",
@@ -77,13 +87,15 @@
   {
     "id": 3,
     "title": "The Gini Index",
-    "department": [
+    "departments": [
       "Economics"
     ],
-    "major": [
+    "majors": [
       "Economics"
     ],
-    "topic": "Area Between Curves",
+    "topics": [
+      "Area Between Curves"
+    ],
     "keywords": [
       "Gini Index",
       "Economics",
@@ -99,13 +111,16 @@
   {
     "id": 4,
     "title": "Rotating on a Slant",
-    "department": [
+    "departments": [
       "Engineering"
     ],
-    "major": [
+    "majors": [
       "Engineering"
     ],
-    "topic": "Area Between Curves, Volumes",
+    "topics": [
+      "Area Between Curves",
+      "Volumes"
+    ],
     "keywords": [
       "Volumes",
       "Discs/Washers",
@@ -120,13 +135,15 @@
   {
     "id": 5,
     "title": "How Fast Does a Tank Drain?",
-    "department": [
+    "departments": [
       "Physics"
     ],
-    "major": [
+    "majors": [
       "Physics"
     ],
-    "topic": "Differential Equations",
+    "topics": [
+      "Differential Equations"
+    ],
     "keywords": [
       "Modeling",
       "Torricelli's Law",
@@ -141,13 +158,15 @@
   {
     "id": 6,
     "title": "Which is Faster, Going Up or Coming Down?",
-    "department": [
+    "departments": [
       "Physics"
     ],
-    "major": [
+    "majors": [
       "Physics"
     ],
-    "topic": "Differential Equations",
+    "topics": [
+      "Differential Equations"
+    ],
     "keywords": [
       "Differential Equations",
       "Projectile Motion",
@@ -161,13 +180,16 @@
   {
     "id": 7,
     "title": "Logistic Sequences",
-    "department": [
+    "departments": [
       "Biology"
     ],
-    "major": [
-      "Biology"
+    "majors": [
+      "Biology",
+      "Ecology"
     ],
-    "topic": "Sequences",
+    "topics": [
+      "Sequences"
+    ],
     "keywords": [
       "Sequences",
       "Logistic Sequences",
@@ -185,13 +207,15 @@
   {
     "id": 8,
     "title": "An Elusive Limit",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Taylor Series",
+    "topics": [
+      "Taylor Series"
+    ],
     "keywords": [
       "L'Hospital's Rule",
       "Taylor Series",
@@ -206,13 +230,16 @@
   {
     "id": 9,
     "title": "How Newton Discovered the Binomial Series",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Taylor Series",
+    "topics": [
+      "Taylor Series",
+      "Applications of Taylor Series"
+    ],
     "keywords": [
       "Binomial Series",
       "Binomial Theorem",
@@ -220,18 +247,22 @@
     ],
     "difficulty": 2,
     "author": "James Stewart",
-    "description": "This project asks students to write a report on Isaac Newton's discovery of the binomial series, comparing the equations and notation Newton used to our notation."
+    "description": "This project asks students to write a report on Isaac Newton's discovery of the binomial series, comparing the equations and notation Newton used to the notation and approach learned in class."
   },
   {
     "id": 10,
     "title": "Running Circles Around Circles",
-    "department": [
-      "Physics"
+    "departments": [
+      "Physics",
+      "Mathematics"
     ],
-    "major": [
-      "Physics"
+    "majors": [
+      "Physics",
+      "Mathematics"
     ],
-    "topic": "Parametric Equations",
+    "topics": [
+      "Parametric Equations"
+    ],
     "keywords": [
       "Cycloids",
       "Hypocycloids",
@@ -245,13 +276,17 @@
   {
     "id": 11,
     "title": "Bézier Curves",
-    "department": [
+    "departments": [
       "Computer Science"
     ],
-    "major": [
-      "Computer Science"
+    "majors": [
+      "Computer Science",
+      "Data Science",
+      "Digital Media and Interactive Design"
     ],
-    "topic": "Calculus with Parametric Equations",
+    "topics": [
+      "Calculus with Parametric Equations"
+    ],
     "keywords": [
       "Linear Interpolation",
       "Parametric Equations",
@@ -267,13 +302,15 @@
   {
     "id": 12,
     "title": "Families of Polar Curves",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Polar Coordinates",
+    "topics": [
+      "Polar Coordinates"
+    ],
     "keywords": [
       "Polar Curves",
       "Polar Coordinates",
@@ -286,13 +323,17 @@
   {
     "id": 13,
     "title": "Power Reduction Formulas and High Dimensional Balls",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Integration by Parts, u-Substitution, Volumes",
+    "topics": [
+      "Integration by Parts",
+      "u-Substitution",
+      "Volumes"
+    ],
     "keywords": [
       "Integration by Parts",
       "Power Reduction Formula",
@@ -302,21 +343,23 @@
     ],
     "difficulty": 2,
     "author": "Edison Hauptman",
-    "description": "In this project, you will use Integration by Parts to solve some trigonometric integrals, then apply this formula to compute the volumes of unit balls in more than 3 dimensions."
+    "description": "In this project, students will use Integration by Parts to solve some trigonometric integrals, then apply this formula to compute the volumes of unit balls in more than 3 dimensions."
   },
   {
     "id": 14,
     "title": "Integrate Any Rational Function",
-    "department": [
+    "departments": [
       "Mathematics",
       "Computer Science"
     ],
-    "major": [
+    "majors": [
       "Mathematics",
       "Computer Science",
       "Applied Mathematics"
     ],
-    "topic": "Partial Fraction Decomposition",
+    "topics": [
+      "Partial Fraction Decomposition"
+    ],
     "keywords": [
       "Partial Fraction Decomposition",
       "Quadratic Formula",
@@ -326,20 +369,24 @@
     ],
     "difficulty": 2,
     "author": "Edison Hauptman",
-    "description": "Students will solve an integral which involves Polynomial Long Division, the Fundamental Theorem of Algebra, Partial Fraction Decomposition, u-Substitution, and Trig Substitution, on their way to demonstrating that any \"rational function\" (polynomial divided by polynomial) has an elementary antiderivative."
+    "description": "Students will write an algorithm to solve integrals using techniques such as Polynomial Long Division, the Fundamental Theorem of Algebra, Partial Fraction Decomposition, u-Substitution, and Trig Substitution, on their way to demonstrating that any rational function (polynomial divided by polynomial) has an elementary antiderivative."
   },
   {
     "id": 15,
     "title": "Gabriel's Horn",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Volumes, Surface Area, Improper Integrals",
+    "topics": [
+      "Volumes",
+      "Surface Area",
+      "Improper Integrals"
+    ],
     "keywords": [
-      "Gabriel’s horn",
+      "Gabriel's Horn",
       "Improper Integrals",
       "Volumes",
       "Discs/Washers",
@@ -349,18 +396,22 @@
     ],
     "difficulty": 1,
     "author": "Edison Hauptman",
-    "description": "Students will use surface area and volume formulas to show the properties of Gabriel's Horn, a strange shape with infinite surface area but only finite volume!"
+    "description": "Students will use surface area and volume formulas to show the main properties of Gabriel's Horn: a shape with infinite surface area but only finite volume!"
   },
   {
     "id": 16,
     "title": "Why (1/2)! Equals √π: The Gamma Function",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Integration by substitution, integration by parts, improper integrals",
+    "topics": [
+      "u-Substitution",
+      "Integration by Parts",
+      "Improper Integrals"
+    ],
     "keywords": [
       "Gamma function",
       "factorial",
@@ -370,18 +421,23 @@
     ],
     "difficulty": 1,
     "author": "Lực Ta",
-    "description": "In this project, students practice integration by parts and u-substitution by computing certain values of the gamma function Γ with an application to probability theory."
+    "description": "In this project, students practice integration by parts and u-substitution by computing certain values of the gamma function Γ, with an application to probability theory."
   },
   {
     "id": 17,
     "title": "An Explicit Formula for The Fibonacci Numbers",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Taylor Series; Series; Representing Functions as Power Series; Partial Fraction Decomposition",
+    "topics": [
+      "Taylor Series",
+      "Series",
+      "Representing Functions as Power Series",
+      "Partial Fraction Decomposition"
+    ],
     "keywords": [
       "Maclaurin series",
       "Taylor series",
@@ -399,11 +455,11 @@
   {
     "id": 18,
     "title": "\"Integrating\" Concepts from Abstract Mathematics and Computer-Aided Design",
-    "department": [
+    "departments": [
       "Mathematics",
       "Engineering"
     ],
-    "major": [
+    "majors": [
       "Applied Mathematics",
       "Mathematics",
       "Mathematical Biology",
@@ -414,7 +470,10 @@
       "Bioengineering",
       "Civil Engineering"
     ],
-    "topic": "Volumes, Volumes by Cylindrical Shells",
+    "topics": [
+      "Volumes",
+      "Volumes by Cylindrical Shells"
+    ],
     "keywords": [
       "Disk method",
       "Washer method",
@@ -427,13 +486,17 @@
   {
     "id": 19,
     "title": "Fourier Series of Square and Triangle Waves",
-    "department": [
+    "departments": [
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Mathematics"
     ],
-    "topic": "Integration by substitution, series, applications to physics and engineering",
+    "topics": [
+      "u-Substitution",
+      "Series",
+      "Applications to Physics/Engineering"
+    ],
     "keywords": [
       "Fourier Series",
       "Signal Processing",
@@ -450,37 +513,46 @@
   {
     "id": 20,
     "title": "Matter and Radiation in an Expanding Universe",
-    "department": [
+    "departments": [
       "Physics and Astronomy"
     ],
-    "major": [
+    "majors": [
       "Physics"
     ],
-    "topic": "Differential equations, Applications of Taylor series",
+    "topics": [
+      "Differential Equations",
+      "Linear Differential Equations",
+      "Taylor Series",
+      "Applications of Taylor Series",
+      "Improper Integrals"
+    ],
     "keywords": [
       "Cosmology",
       "Expansion of the Universe",
-      "Hubble’s Law",
+      "Hubble's Law",
       "Friedman Equations"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "author": "Marcell Howard",
-    "description": "-"
+    "description": "In this project, students will solve differential equations and integrals as part of the study of (1) the densities of different particles, (2) the expansion rate of the universe (via the Friedmann equation), and (3) the energy density of the universe."
   },
   {
     "id": 21,
     "title": "Modeling Waiting Times",
-    "department": [
+    "departments": [
       "Neuroscience",
       "Statistics",
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Neuroscience",
       "Statistics",
       "Mathematics"
     ],
-    "topic": "Improper Integrals, Integration by Parts",
+    "topics": [
+      "Improper Integrals",
+      "Integration by Parts"
+    ],
     "keywords": [
       "Continuous-Time Markov Chain",
       "Exponential Distribution",
@@ -488,20 +560,25 @@
     ],
     "difficulty": 2,
     "author": "Cameron Watt",
-    "description": "-"
+    "description": "In this project, students will work with the probability distributions of various wait-time models in order to prove various facts about them, including memorylessness and expected value."
   },
   {
     "id": 22,
     "title": "Neuron Firing Models",
-    "department": [
+    "departments": [
       "Neuroscience",
       "Mathematics"
     ],
-    "major": [
+    "majors": [
       "Neuroscience",
       "Mathematics"
     ],
-    "topic": "Applications of differential equations, improper integrals, trigonometric substitution",
+    "topics": [
+      "Differential Equations",
+      "Applications of Differential Equations",
+      "Improper Integrals",
+      "Trigonometric Substitution"
+    ],
     "keywords": [
       "Integrate-and-Fire Models"
     ],

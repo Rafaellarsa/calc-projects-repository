@@ -10,10 +10,10 @@
     <v-expand-transition>
       <v-card-text v-if="expand">
         <v-row no-gutters>
-          <v-col><b>Topic:</b> {{ project.topic }}</v-col></v-row
+          <v-col><b>Topics:</b> {{ project.topics.join(", ") }}</v-col></v-row
         ><v-row no-gutters
-          ><v-col><b>Department:</b> {{ project.department.join(", ") }} </v-col
-          ><v-col><b>Major:</b> {{ project.major.join(", ") }}</v-col></v-row
+          ><v-col><b>Departments:</b> {{ project.departments.join(", ") }} </v-col
+          ><v-col><b>Majors:</b> {{ project.majors.join(", ") }}</v-col></v-row
         >
         <v-row no-gutters>
           <v-col
