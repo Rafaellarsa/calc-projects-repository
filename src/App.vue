@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <AppHeader v-if="currentRouteName != 'login'" />
+    <AppHeader v-if="!hideHeaderRoutes.includes(currentRouteName)" />
     <RouterView />
 
     <!-- <AppFooter /> -->
@@ -9,11 +9,15 @@
 
 <script>
 export default {
+  data () {
+    return {
+      hideHeaderRoutes: ['login', 'update-password'],
+    }
+  },
   computed: {
-  currentRouteName() {
-      console.log(this.$route.name)
+    currentRouteName () {
       return this.$route.name;
+    }
   }
-}
 }
 </script>
